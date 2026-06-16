@@ -1,0 +1,27 @@
+{
+  "name": "budgetbooking-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.5",
+    "chart.js": "^4.4.4",
+    "gsap": "^3.12.5",
+    "pinia": "^2.2.4",
+    "vue-chartjs": "^5.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/i18n": "^10.4.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "nuxt": "^3.13.2"
+  },
+  "overrides": {
+    "vite": "7.3.5"
+  }
+}

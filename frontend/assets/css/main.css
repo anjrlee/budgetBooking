@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-ink font-sans antialiased;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+/* Soft scrollbar for horizontal table scroll on mobile */
+.scroll-soft::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-soft::-webkit-scrollbar-thumb {
+  background: theme('colors.outline');
+  border-radius: 999px;
+}
+
+@keyframes float-bubble {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float-bubble {
+  animation: float-bubble 3.5s ease-in-out infinite;
+}
+
+@layer components {
+  .field-label {
+    @apply mb-1 block text-sm font-bold text-ink-soft;
+  }
+  .input-field {
+    @apply w-full rounded-field border border-transparent bg-surface-container-low px-4 py-2.5 text-ink transition focus:border-primary focus:bg-primary-light/20 focus:outline-none;
+  }
+  .select-field {
+    @apply input-field appearance-none pr-8;
+  }
+  .btn-primary {
+    @apply rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-soft-primary transition hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100;
+  }
+  .btn-secondary {
+    @apply rounded-full bg-surface-container px-6 py-2.5 text-sm font-bold text-ink-soft transition hover:bg-surface-container-high;
+  }
+  .icon-btn {
+    @apply flex h-9 w-9 items-center justify-center rounded-full text-ink-soft transition hover:bg-surface-container-low hover:text-ink;
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "common": {
+    "appName": "NestEgg",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "close": "Close",
+    "total": "Total",
+    "back": "Back",
+    "note": "Note",
+    "noteOptional": "Note (optional)",
+    "amount": "Amount",
+    "date": "Date",
+    "actions": "Actions",
+    "yes": "Yes",
+    "no": "No",
+    "select": "Select"
+  },
+  "nav": {
+    "home": "Home",
+    "setBudget": "Set Budget",
+    "booking": "Booking",
+    "statistics": "Statistics",
+    "setting": "Setting",
+    "report": "Report",
+    "budget": "Budget"
+  },
+  "home": {
+    "welcomeTitle": "Welcome to NestEgg",
+    "welcomeSubtitle": "Your cozy nest for managing money",
+    "birdMessage": "Hmm... who's looking after the budget around here?",
+    "loginButton": "Sign in with Google",
+    "loginError": "Sign-in failed. Please try again.",
+    "greeting": "Welcome back, {name}!",
+    "cards": {
+      "setBudget": { "title": "Set Budget", "description": "Plan how your income flows into each nest" },
+      "booking": { "title": "Booking", "description": "Record your spending and income" },
+      "statistics": { "title": "Statistics", "description": "See how your nest is growing" },
+      "setting": { "title": "Setting", "description": "Manage your profile and preferences" }
+    }
+  },
+  "setBudget": {
+    "title": "Set Budget",
+    "hint": "Click the pie chart or nest to edit your budget groups.",
+    "groups": "Budget Groups",
+    "addGroup": "Add Group",
+    "editGroup": "Edit Group",
+    "deleteGroup": "Delete",
+    "deleteConfirmTitle": "Delete budget group?",
+    "deleteConfirmBody": "\"{name}\" will be removed. Its balance and percentage will be moved into Saving.",
+    "savingProtected": "The saving bucket cannot be deleted or directly edited.",
+    "saveBucketName": "saving",
+    "form": {
+      "name": "Group Name",
+      "namePlaceholder": "e.g. Groceries",
+      "icon": "Icon",
+      "color": "Color",
+      "percentage": "Percentage of Income (%)",
+      "note": "Note",
+      "notePlaceholder": "Optional note",
+      "nameInUse": "Name already in use",
+      "total": "Total: {total}% — must be 100%",
+      "totalOk": "Total: 100% ✓",
+      "savingPreview": "Saving: {from}% → {to}%",
+      "negativeSaving": "Saving cannot go below 0%. Reduce other percentages.",
+      "submit": "Save",
+      "existingBudgets": "Existing Budgets"
+    },
+    "table": {
+      "name": "Name",
+      "percentage": "Percentage",
+      "balance": "Balance",
+      "actions": "Actions"
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "spending": "Spending",
+    "income": "Income",
+    "form": {
+      "budgetGroup": "Budget Group",
+      "selectBudgetGroup": "Select a budget group",
+      "amount": "Amount",
+      "amountPlaceholder": "0.00",
+      "note": "Note (optional)",
+      "submit": "Submit",
+      "distributionMethod": "Distribution Method",
+      "auto": "Auto Distribution",
+      "specific": "Specific Budget Group"
+    },
+    "success": "Recorded successfully!",
+    "error": "Something went wrong. Please try again.",
+    "recentIncome": "Recent Income (This Month)",
+    "emptyIncome": "No income this month yet.",
+    "recentSpending": "Recent Spending (This Month)",
+    "emptySpending": "No spending this month yet.",
+    "table": {
+      "date": "Date",
+      "type": "Type",
+      "amount": "Amount",
+      "note": "Note"
+    },
+    "distributed": "Distributed",
+    "deleteConfirmTitle": "Delete this record?",
+    "deleteConfirmBody": "This will reverse its effect on your budget balances."
+  },
+  "statistics": {
+    "title": "Statistics",
+    "cards": {
+      "report": { "title": "See Report", "description": "View your spending and income reports" },
+      "budget": { "title": "See Each Budget", "description": "Check the balance and trend of each budget" }
+    }
+  },
+  "report": {
+    "title": "Report",
+    "tabs": {
+      "spending": "Spending",
+      "income": "Income"
+    },
+    "scope": {
+      "label": "Scope",
+      "all": "All Spending",
+      "specific": "Specific Budget"
+    },
+    "period": {
+      "label": "Period",
+      "monthly": "Monthly",
+      "annual": "Annual"
+    },
+    "noPeriods": "No records yet for this selection.",
+    "summary": {
+      "title": "Summary",
+      "budgetGroup": "Budget Group",
+      "totalSpent": "Total Spent",
+      "currentBalance": "Current Balance"
+    },
+    "trend": "Monthly Trend",
+    "transactions": "Transactions",
+    "empty": "No records found.",
+    "table": {
+      "date": "Date",
+      "budgetGroup": "Budget Group",
+      "type": "Type",
+      "amount": "Amount",
+      "note": "Note"
+    },
+    "deleteConfirmTitle": "Delete this record?",
+    "deleteConfirmBody": "This will reverse its effect on your budget balances."
+  },
+  "budget": {
+    "title": "Budget",
+    "selectGroup": "Select Budget Group",
+    "currentBalance": "Current Balance",
+    "trend": "12-Month Spending Trend",
+    "overdraft": "Overdraft"
+  },
+  "setting": {
+    "title": "Setting",
+    "profile": "Profile",
+    "name": "Name",
+    "email": "Email",
+    "language": "Language",
+    "languages": {
+      "zh-Hant": "繁體中文",
+      "en": "English"
+    },
+    "logout": "Logout",
+    "logoutConfirmTitle": "Log out?",
+    "logoutConfirmBody": "You will need to sign in again to access your nest."
+  },
+  "auth": {
+    "sessionExpired": "Your session has expired. Please sign in again."
+  }
+}

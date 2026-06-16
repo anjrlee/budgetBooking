@@ -1,0 +1,178 @@
+{
+  "common": {
+    "appName": "NestEgg",
+    "loading": "載入中...",
+    "save": "儲存",
+    "cancel": "取消",
+    "confirm": "確認",
+    "delete": "刪除",
+    "edit": "編輯",
+    "add": "新增",
+    "close": "關閉",
+    "total": "總計",
+    "back": "返回",
+    "note": "備註",
+    "noteOptional": "備註（選填）",
+    "amount": "金額",
+    "date": "日期",
+    "actions": "操作",
+    "yes": "是",
+    "no": "否",
+    "select": "請選擇"
+  },
+  "nav": {
+    "home": "首頁",
+    "setBudget": "設定預算",
+    "booking": "記帳",
+    "statistics": "統計",
+    "setting": "設定",
+    "report": "報表",
+    "budget": "預算明細"
+  },
+  "home": {
+    "welcomeTitle": "歡迎來到 NestEgg",
+    "welcomeSubtitle": "你的溫暖理財小窩",
+    "birdMessage": "嗯...這裡的預算到底是誰在管啊？",
+    "loginButton": "使用 Google 登入",
+    "loginError": "登入失敗，請再試一次。",
+    "greeting": "歡迎回來，{name}！",
+    "cards": {
+      "setBudget": { "title": "設定預算", "description": "規劃你的收入要如何分配到各個小窩" },
+      "booking": { "title": "記帳", "description": "記錄你的支出與收入" },
+      "statistics": { "title": "統計", "description": "看看你的小窩成長了多少" },
+      "setting": { "title": "設定", "description": "管理你的個人資料與偏好設定" }
+    }
+  },
+  "setBudget": {
+    "title": "設定預算",
+    "hint": "點擊圓餅圖或小窩來編輯你的預算分類。",
+    "groups": "預算分類",
+    "addGroup": "新增分類",
+    "editGroup": "編輯分類",
+    "deleteGroup": "刪除",
+    "deleteConfirmTitle": "刪除這個預算分類？",
+    "deleteConfirmBody": "「{name}」將被移除，其餘額與百分比會併入儲蓄。",
+    "savingProtected": "儲蓄分類無法刪除或直接編輯。",
+    "saveBucketName": "saving",
+    "form": {
+      "name": "分類名稱",
+      "namePlaceholder": "例如：飲食",
+      "icon": "圖示",
+      "color": "顏色",
+      "percentage": "收入百分比 (%)",
+      "note": "備註",
+      "notePlaceholder": "選填備註",
+      "nameInUse": "名稱已被使用",
+      "total": "總計：{total}% — 必須為 100%",
+      "totalOk": "總計：100% ✓",
+      "savingPreview": "儲蓄：{from}% → {to}%",
+      "negativeSaving": "儲蓄不能低於 0%，請調整其他分類的百分比。",
+      "submit": "儲存",
+      "existingBudgets": "現有預算分類"
+    },
+    "table": {
+      "name": "名稱",
+      "percentage": "百分比",
+      "balance": "餘額",
+      "actions": "操作"
+    }
+  },
+  "booking": {
+    "title": "記帳",
+    "spending": "支出",
+    "income": "收入",
+    "form": {
+      "budgetGroup": "預算分類",
+      "selectBudgetGroup": "請選擇預算分類",
+      "amount": "金額",
+      "amountPlaceholder": "0.00",
+      "note": "備註（選填）",
+      "submit": "送出",
+      "distributionMethod": "分配方式",
+      "auto": "自動分配",
+      "specific": "指定預算分類"
+    },
+    "success": "記錄成功！",
+    "error": "發生錯誤，請再試一次。",
+    "recentIncome": "本月最近收入",
+    "emptyIncome": "本月還沒有收入記錄。",
+    "recentSpending": "本月最近支出",
+    "emptySpending": "本月還沒有支出記錄。",
+    "table": {
+      "date": "日期",
+      "type": "類型",
+      "amount": "金額",
+      "note": "備註"
+    },
+    "distributed": "自動分配",
+    "deleteConfirmTitle": "刪除這筆記錄？",
+    "deleteConfirmBody": "這將會還原其對預算餘額的影響。"
+  },
+  "statistics": {
+    "title": "統計",
+    "cards": {
+      "report": { "title": "查看報表", "description": "檢視你的支出與收入報表" },
+      "budget": { "title": "查看各預算", "description": "查看每個預算的餘額與趨勢" }
+    }
+  },
+  "report": {
+    "title": "報表",
+    "tabs": {
+      "spending": "支出",
+      "income": "收入"
+    },
+    "scope": {
+      "label": "範圍",
+      "all": "全部支出",
+      "specific": "指定預算"
+    },
+    "period": {
+      "label": "週期",
+      "monthly": "月",
+      "annual": "年"
+    },
+    "noPeriods": "此選項目前尚無記錄。",
+    "summary": {
+      "title": "摘要",
+      "budgetGroup": "預算分類",
+      "totalSpent": "總支出",
+      "currentBalance": "目前餘額"
+    },
+    "trend": "月趨勢",
+    "transactions": "明細記錄",
+    "empty": "找不到任何記錄。",
+    "table": {
+      "date": "日期",
+      "budgetGroup": "預算分類",
+      "type": "類型",
+      "amount": "金額",
+      "note": "備註"
+    },
+    "deleteConfirmTitle": "刪除這筆記錄？",
+    "deleteConfirmBody": "這將會還原其對預算餘額的影響。"
+  },
+  "budget": {
+    "title": "預算明細",
+    "selectGroup": "選擇預算分類",
+    "currentBalance": "目前餘額",
+    "trend": "近12個月支出趨勢",
+    "overdraft": "透支"
+  },
+  "setting": {
+    "title": "設定",
+    "profile": "個人資料",
+    "name": "姓名",
+    "email": "電子郵件",
+    "language": "語言",
+    "languages": {
+      "zh-Hant": "繁體中文",
+      "en": "English"
+    },
+    "logout": "登出",
+    "logoutConfirmTitle": "要登出嗎？",
+    "logoutConfirmBody": "登出後需要重新登入才能存取你的小窩。"
+  },
+  "auth": {
+    "sessionExpired": "登入已逾期，請重新登入。"
+  }
+}
