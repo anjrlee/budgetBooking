@@ -25,6 +25,7 @@ async function toggleLocale() {
       <NuxtLink to="/" class="flex items-center gap-2">
         <span class="material-symbols-outlined text-primary">savings</span>
         <span class="font-display text-xl font-bold text-primary-dark">{{ $t('common.appName') }}</span>
+        <span class="rounded-full bg-primary/15 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-primary">beta</span>
       </NuxtLink>
 
       <div class="flex items-center gap-3">

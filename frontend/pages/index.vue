@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const authStore = useAuthStore()
 const { t } = useI18n()
+const config = useRuntimeConfig()
 const loginError = ref(false)
 
 async function onLoginSuccess(idToken: string) {
@@ -43,6 +44,12 @@ const cards = computed(() => [
           :description="card.description"
         />
       </div>
+
+      <div class="mt-8 flex justify-center gap-4">
+        <NuxtLink to="/about" class="text-xs text-ink-soft underline-offset-2 hover:underline">{{ $t('home.about') }}</NuxtLink>
+        <a v-if="config.public.sponsorUrl" :href="config.public.sponsorUrl" target="_blank" rel="noopener" class="text-xs text-ink-soft underline-offset-2 hover:underline">{{ $t('home.sponsor') }}</a>
+        <a v-if="config.public.reportIssueUrl" :href="config.public.reportIssueUrl" target="_blank" rel="noopener" class="text-xs text-ink-soft underline-offset-2 hover:underline">{{ $t('home.reportIssue') }}</a>
+      </div>
     </div>
 
     <!-- Logged out: welcome hero + Google login -->
@@ -73,6 +80,12 @@ const cards = computed(() => [
 
       <GoogleLoginButton @success="onLoginSuccess" @error="onLoginError" />
       <p v-if="loginError" class="mt-3 text-sm text-error">{{ $t('home.loginError') }}</p>
+
+      <div class="mt-10 flex justify-center gap-4">
+        <NuxtLink to="/about" class="text-xs text-ink-soft underline-offset-2 hover:underline">{{ $t('home.about') }}</NuxtLink>
+        <a v-if="config.public.sponsorUrl" :href="config.public.sponsorUrl" target="_blank" rel="noopener" class="text-xs text-ink-soft underline-offset-2 hover:underline">{{ $t('home.sponsor') }}</a>
+        <a v-if="config.public.reportIssueUrl" :href="config.public.reportIssueUrl" target="_blank" rel="noopener" class="text-xs text-ink-soft underline-offset-2 hover:underline">{{ $t('home.reportIssue') }}</a>
+      </div>
     </div>
   </div>
 </template>

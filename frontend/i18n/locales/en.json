@@ -41,7 +41,15 @@
       "booking": { "title": "Booking", "description": "Record your spending and income" },
       "statistics": { "title": "Statistics", "description": "See how your nest is growing" },
       "setting": { "title": "Setting", "description": "Manage your profile and preferences" }
-    }
+    },
+    "about": "About NestEgg",
+    "sponsor": "Sponsor",
+    "reportIssue": "Report Issue"
+  },
+  "about": {
+    "title": "About NestEgg",
+    "description": "NestEgg is a cozy personal budget tool that helps you distribute your income across different nests, so every dollar has a home.",
+    "back": "Back to home"
   },
   "setBudget": {
     "title": "Set Budget",

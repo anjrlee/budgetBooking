@@ -41,7 +41,15 @@
       "booking": { "title": "記帳", "description": "記錄你的支出與收入" },
       "statistics": { "title": "統計", "description": "看看你的小窩成長了多少" },
       "setting": { "title": "設定", "description": "管理你的個人資料與偏好設定" }
-    }
+    },
+    "about": "關於 NestEgg",
+    "sponsor": "贊助",
+    "reportIssue": "回報問題"
+  },
+  "about": {
+    "title": "關於 NestEgg",
+    "description": "NestEgg 是一個溫暖的個人預算管理工具，幫助你把收入分配到不同的小窩，讓每一分錢都有它的家。",
+    "back": "回首頁"
   },
   "setBudget": {
     "title": "設定預算",
